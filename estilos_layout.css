@@ -1,0 +1,61 @@
+#cabecalho{
+    background-color: var(--verde);
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#cabecalho_pagina {
+    min-height: 250px;
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#painel_pagina {
+    color: var(--branco);
+    padding: 20px;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--laranja);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 2%;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#menu_pagina{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#pesquisa_pagina{
+    background-color: var(--cinza);
+    margin: 10px auto;
+    width: 960px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+
+
+

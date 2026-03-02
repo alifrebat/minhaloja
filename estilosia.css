@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+#cabecalho {
+  background-color: #e0ffe0;
+  padding: 20px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#menu .menu {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+#login {
+  margin-left: 20px;
+  padding: 5px 10px;
+}
+
+/* Painel */
+#painel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#painel_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Seção de pesquisa */
+#pesquisa {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#form_pesquisa {
+  margin-top: 10px;
+}
+
+#form_pesquisa input {
+  padding: 10px;
+  width: 300px;
+  max-width: 80%;
+}
+
+#btnPesquisa {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Seção de Cards */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.img_card {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.conteudo_card {
+  padding: 15px;
+}
+
+.add {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Compromissos */
+#compromisso {
+  padding: 40px 20px;
+  background-color: #e8f5e9;
+}
+
+#valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.compromisso {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.compromisso img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Rodapé */
+#rodape {
+  background-color: #2e7d32;
+  color: white;
+  padding: 40px 20px;
+}
+
+.dados_rodape {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.caixa_rodape h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  margin-right: 10px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Orgânico</title>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos_layout.css">
+    <link rel="stylesheet" href="css/estilos_login.css">
+
+    <script src="js/js_api/pessoa/pessoa_login.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="cabecalho_pagina">
+            <div id="logo_menu">
+                <a id="lnk_index" href="index.html">
+                    <p id="logo">Rural <strong>Orgânico</strong></p>
+                </a>
+                <nav id="menu">
+                    <ul>
+                        <li class="item"><a href="index.html" class="menu">Loja</a></li>
+                        <li class="item"><a href="cadastro.html" class="menu">Cadastro</a></li>
+
+                        <li class="item">
+                            <div id="area_login">
+                                <a href="login.html" id="btn_link_login">
+                                    <img src="imagens/icones/img_login.png" alt="Login" title="Login">
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item"><a href="carrinho.html" class="menu area_carrinho"><img
+                                    class="img_menu carrinho" src="imagens/icones/carrinho.png" alt=""></a><span
+                                id="quantidade_item">0</span></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="painel_pagina">
+                <div id="menu_pagina">
+                    <h2>Identificação</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="identificacao">
+
+
+        <div id="cadastro" class="identicacao">
+            <h3>ACESSE SUA CONTA</h3>
+
+            <form id="form_login">
+                <label for="login">Email, CPF ou CNPJ</label>
+                <input type="text" name="login" id="login" placeholder="Digite o Email,  CPF ou CNPJ" maxlength="100"
+                    required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite a Senha" maxlength="8" required>
+                <button id="btn_cadastrar" class="btn_cadastrar">Acessar</button>
+                <div id="msg_login" class="msg msg_login"></div>
+            </form>
+        </div>
+
+    </section>
+    <footer id="rodape">
+        <div id="dados_rodape">
+            <div class="caixa_rodape">
+                <h4>Rural Orgânico</h4>
+                <h6>Sobre</h6>
+                <h6>Compromissos</h6>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Pagamentos</h4>
+                <h6>Pix</h6>
+                <h6>Débito</h6>
+                <h6>Crédito</h6>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Redes Sociais</h4>
+                <div class="social_icons">
+                    <h6><img src="imagens/instagram.jpg" alt="Instagram" /></h6>
+                    <h6><img src="imagens/facebook.jpg" alt="Facebook" /></h6>
+                </div>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Contatos</h4>
+                <h6>comercail@ruralorganico.com.br</h6>
+                <h6>+55 79 999991234</h6>
+                <h6>Av. Sen. José Eduardo Dutra, 103, CEP.: 490107-553, Bairro Gov. Marcelo Déda <br> São Cristóvão -
+                    Sergipe</h6>
+            </div>
+        </div>
+        <div id="copy">
+            &copy 2025 - Rural Orgânico. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>

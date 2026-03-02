@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Orgânico</title>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos_layout.css">
+    <link rel="stylesheet" href="css/estilos_formulario.css">
+
+    <script src="js/mascaras_dados.js" defer></script>
+    <script type="module" src="js/js_api/pessoa/pessoa_cadastro.js" defer></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="cabecalho_pagina">
+            <div id="logo_menu">
+                <a id="lnk_index" href="index.html">
+                    <p id="logo">Rural <strong>Orgânico</strong></p>
+                </a>
+
+                <nav id="menu">
+                    <ul>
+                        <li class="item"><a href="index.html" class="menu">Loja</a></li>
+                        <li class="item"><a href="cadastro.html" class="menu">Cadastro</a></li>
+                        <li class="item">
+                            <div id="area_login">
+                                <a href="login.html" id="btn_link_login">
+                                    <img src="imagens/icones/img_login.png" alt="Login" title="Login">
+                                </a>
+                            </div>
+                              <li class="item"><a href="carrinho.html" class="menu area_carrinho"><img class="img_menu carrinho" src="imagens/icones/carrinho.png" alt=""></a><span id="quantidade_item">0</span></li>
+                        </li>                       
+                    </ul>
+                </nav>
+            </div>
+            <div id="painel_pagina">
+                <div id="menu_pagina">
+                    <h2>Cadastre seus Dados Pessoais</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="formulario">
+        <form id="formulario_pessoa">
+            <label for="nome">Nome*</label>
+            <input type="text" name="nome" id="nome" class="campo_tp_01" placeholder="Digite o nome" maxlength="40"
+                required>
+
+            <label for="sobrenome">Sobrenome*</label>
+            <input type="text" name="sobrenome" id="sobrenome" class="campo_tp_01" placeholder="Digite o Sobrenome"
+                maxlength="80" required>
+
+            <label for="cpf">CPF*</label>
+            <input type="text" name="cpf" id="cpf" class="campo_tp_02" placeholder="Digite o CPF" maxlength="14"
+                required>
+            <div id="msg_cpf" class="msg msg_cpf"></div>
+
+            <label for="telefone">Telefone*</label>
+            <input type="text" name="telefone" id="telefone" class="campo_tp_02" placeholder="Digite o Telefone"
+                maxlength="15" required>
+
+            <label for="email">Email*</label>
+            <input type="mail" name="email" id="email" class="campo_tp_01" placeholder="Digite o email" maxlength="100"
+                required>
+            <div id="msg_email" class="msg msg_cpf"></div>
+
+            <label for="datas">Data Nascimento</label>
+            <input type="text" name="datas" id="datas" class="campo_tp_03" placeholder="Digite a Data de Nascimento"
+                maxlength="10" required>
+            <div id="msg_data" class="msg msg_data"></div>
+
+            <label for="cep">CEP*</label>
+            <input type="text" name="cep" id="cep" class="campo_tp_03" placeholder="Digite o CEP" maxlength="09"
+                required>
+            <div id="msg_cep" class="msg msg_cep"></div>
+
+            <div id="div_endereco" class=" oculto">
+                <label for="logradouro">Logradouro*</label>
+                <input type="text" name="logradouro" id="logradouro" class="campo_tp_01"
+                    placeholder="Digite o logradouro" maxlength="100" required>
+
+                <label for="numero">Número*</label>
+                <input type="text" name="numero" id="numero" class="campo_tp_03" placeholder="Digite o Número"
+                    maxlength="10" required>
+
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" class="campo_tp_01"
+                    placeholder="Digite o Complemento " maxlength="100" required>
+
+                <label for="bairro">Bairro*</label>
+                <input type="text" name="bairro" id="bairro" class="campo_tp_01" placeholder="Digite o Bairro"
+                    maxlength="30" required>
+
+                <label for="localidade">Cidade*</label>
+                <input type="text" name="localidade" id="localidade" class="campo_tp_01" placeholder="Digite o Bairro"
+                    maxlength="50" required>
+
+                <label for="uf">Estado*</label>
+                <input type="text" name="uf" id="uf" class="campo_tp_03" placeholder="Digite a UF" maxlength="2"
+                    required>
+            </div>
+
+            <label for="senha">Senha*</label>
+            <input type="password" name="senha" id="senha" class="campo_tp_03" placeholder="Digite a Senha"
+                maxlength="08" required>
+
+            <div id="oferta">
+                <input type="checkbox" name="oferta" value="S" class="checkbox" checked> <span class="txt_oferta">Deseja
+                    receber nossas ofertas pelo email e pelo Whatsapp?</span>
+            </div>
+
+            <div id="btns">
+                <button type="submit" id="btn_cadastrar" class="btn_cadastrar">Cadastrar</button>
+                <button type="reset" id="btn_limpar" class="btn_limpar">Limpar</button>
+            </div>
+        </form>
+
+    </section>
+    <footer id="rodape">
+        <div id="dados_rodape">
+            <div class="caixa_rodape">
+                <h4>Rural Orgânico</h4>
+                <h6>Sobre</h6>
+                <h6>Compromissos</h6>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Pagamentos</h4>
+                <h6>Pix</h6>
+                <h6>Débito</h6>
+                <h6>Crédito</h6>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Redes Sociais</h4>
+                <div class="social_icons">
+                    <h6><img src="imagens/instagram.jpg" alt="Instagram" /></h6>
+                    <h6><img src="imagens/facebook.jpg" alt="Facebook" /></h6>
+                </div>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Contatos</h4>
+                <h6>comercail@ruralorganico.com.br</h6>
+                <h6>+55 79 999991234</h6>
+                <h6>Av. Sen. José Eduardo Dutra, 103, CEP.: 490107-553, Bairro Gov. Marcelo Déda <br> São Cristóvão -
+                    Sergipe</h6>
+            </div>
+        </div>
+        <div id="copy">
+            &copy 2025 - Rural Orgânico. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>

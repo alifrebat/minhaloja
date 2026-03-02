@@ -1,0 +1,19 @@
+#divgeral{
+    width: 900px;
+    min-height: 800px;
+    background-color: aqua;
+    margin: 20px auto;
+    display: flex;
+}
+
+#divEsquerdo{
+    background-color: yellow;
+    width: 50%;
+    min-height: 800px;
+}
+
+#divDireito{
+    background-color: green;
+    width: 50%;
+    min-height: 800px;
+}

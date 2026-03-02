@@ -1,0 +1,25 @@
+.divAnimacao{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.itemCardAnimacao{
+    position: absolute;
+    width: 100px;
+    /* Tamanho do produto na animação */
+    height: 100px;
+    border-radius: 100px;
+    /* Tamanho do produto na animação */
+    /* Adicione a imagem do produto aqui via CSS */
+    background-size: cover;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    /* Animação de movimento e desaparecimento */
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+}
+

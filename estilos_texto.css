@@ -1,0 +1,18 @@
+#texto{
+    margin: 10px auto;
+    padding: 40px;
+    min-width: 300px;
+    max-width: 960px;
+    min-height: 800px;
+    position: relative;
+    top: 65px; 
+    border-radius: 8px;    
+    background-color: var(--cinza);
+}
+
+h3{
+    text-align: justify;
+    color: var(--verde);
+    line-height: 240%;
+}
+

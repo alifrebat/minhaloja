@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Orgânico</title>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos_layout.css">
+    <link rel="stylesheet" href="css/estilos_carrinho.css">
+
+    <script src="js/monta_tela_carrinho.js" defer type="module"></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="cabecalho_pagina">
+            <div id="logo_menu">
+                <a id="lnk_index" href="index.html">
+                    <p id="logo">Rural <strong>Orgânico</strong></p>
+                </a>
+
+                <nav id="menu">
+                    <ul>
+                        <li class="item"><a href="index.html" class="menu">Loja</a></li>
+                        <li class="item"><a href="cadastro.html" class="menu">Cadastro</a></li>
+
+                        <li class="item">
+                            <div id="area_login">
+                                <a href="login.html" id="btn_link_login">
+                                    <img src="imagens/icones/img_login.png" alt="Login" title="Login">
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="item"><a href="carrinho.html" class="menu area_carrinho"><img
+                                    class="img_menu carrinho" src="imagens/icones/carrinho.png" alt=""></a><span
+                                id="quantidade_item">0</span></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="painel_pagina">
+                <div id="menu_pagina">
+                    <h2>Carrinho de Compras</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sacola">
+        <div id="itens">
+
+        </div>
+
+        <div id="painel_valor">
+
+            <div class="caixa_valor">
+                <div id="calculo_cep">
+                    <h3 class="titulo_valor_final">CEP</h3>
+                    <input type="text" name="cep" id="cep" placeholder="Digite o Cep">
+
+                    <div id="descricao_cep">
+                        Inácio Barbosa, Aracaju/Se
+                    </div>
+                </div>
+            </div>
+
+            <div class="caixa_valor">
+                <h3 class="titulo_valor_final">Valor Total</h3>
+                <h3 class="valor_final"><span>R$</span> <span id="valor_compra"> </span></h3>
+
+                <h3 class="titulo_valor_final">Valor Frete</h3>
+                <div id="valor_entrega">
+                    <h3 class="valor_final"><span>R$</span> <span id="valor_frete">5,00</span></h3>
+                </div>
+            </div>
+
+
+            <div class="caixa_valor">
+                <h3 class="titulo_valor_final">Total a pagar</h3>
+                <h3 class="valor_final"><span>R$</span> <span class="valor_total_pagar" id="valor_total_pagar"> </span>
+                </h3>
+            </div>
+
+            <div class="caixa_valor">
+                <h3 class="titulo_valor_final">Forma pagamento</h3>
+
+                <div id="radioPagamento">
+
+                    <span> <input type="radio" name="pagamento" id="pix" class="radioPagamento" value="PIX" required>
+                        <img src="imagens/icones/icone_pix.png" alt="PIX" title="PIX" class="img_pagamento"> PIX
+                    </span>
+                    <span><input type="radio" name="pagamento" id="DÉBITO" class="radioPagamento" value="DÉBITO"
+                            required>
+                        <img src="imagens/icones/icone_debito.png" alt="DÉBITO" title="DÉBITO" class="img_pagamento">
+                        DÉBITO</span>
+                    <span><input type="radio" name="pagamento" id="CRÉDITO" class="radioPagamento" value="CRÉDITO"
+                            required>
+                        <img src="imagens/icones/icone_credito.png" alt="CRÉDITO" title="CRÉDITO" class="img_pagamento">
+                        CRÉDITO</span>
+
+                </div>
+            </div>
+
+            <button type="submit" id="finalizar_compra">Finalizar Compra</button>
+
+            <a href="loja.html" class="lnk_btn">Continuar Compra</a>
+
+        </div>
+
+
+    </section>
+    <footer id="rodape">
+        <div id="dados_rodape">
+            <div class="caixa_rodape">
+                <h4>Rural Orgânico</h4>
+                <h6>Sobre</h6>
+                <h6>Compromissos</h6>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Pagamentos</h4>
+                <h6>Pix</h6>
+                <h6>Débito</h6>
+                <h6>Crédito</h6>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Redes Sociais</h4>
+                <div class="social_icons">
+                    <h6><img src="imagens/instagram.jpg" alt="Instagram" /></h6>
+                    <h6><img src="imagens/facebook.jpg" alt="Facebook" /></h6>
+                </div>
+            </div>
+            <div class="caixa_rodape">
+                <h4>Contatos</h4>
+                <h6>comercial@ruralorganico.com.br</h6>
+                <h6>+55 79 999991234</h6>
+                <h6>Av. Sen. José Eduardo Dutra, 103, CEP.: 490107-553, Bairro Gov. Marcelo Déda <br> São Cristóvão -
+                    Sergipe</h6>
+            </div>
+        </div>
+        <div id="copy">
+            &copy 2025 - Rural Orgânico. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>
